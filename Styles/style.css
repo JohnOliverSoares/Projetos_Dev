@@ -195,7 +195,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 15px;
 }
 
 .register_link p {
@@ -221,7 +221,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0 20px 0;
+    padding: 25px 0 20px 0;
 }
 
 .footer-reserved{
@@ -391,18 +391,18 @@ body {
     }
 
     .login-card{
-        width: 91%;
+        width: 90%;
         height: auto;
-        font-size: 9px;
+        font-size: 10px;
     }
 
     .login-card h1{
-        font-size: 20px;
+        font-size: 24px;
     }
 
 
     .input-box input, .login-card .remember_forgot, .register_link p, .register_link a, .footer-reserved {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     .btn-login button{
