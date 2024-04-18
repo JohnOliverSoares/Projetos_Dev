@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --cor-de-fundo: #ff8e20;
+    --cor-de-apoio: #FFFFFF;
+    --cor-primaria: #6c0b05;
+    --cor-secundaria:#9B3922;
+    --cor-da-sombra: 0px 10px 40px #00000056;
+    --font-primaria:'Inter', 'Sans serif';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-left {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    background-image: url("../Img/hambg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.login-left h1 {
+    font-size: 28pt;
+    padding: 20px;
+    text-align: center;
+    font-family: var(--font-primaria);
+    font-weight: 700;
+    color: var(--cor-de-apoio);
+}
+
+.login-left h1::after {
+    content: '';
+    display: block;
+    width: 8rem;
+    height: 0.5rem;
+    background-color: var(--cor-de-fundo);
+    margin: 10px auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.left-title{
+    color: var(--cor-de-fundo);
+}
+
+.login-right {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 10% 20%, rgb(255, 197, 61) 0%, rgb(255, 94, 7) 90%);
+}
+
+.login-right img{
+    width: 14rem;
+    margin-bottom: 20px;
+}
+
+.login-card {
+    width: 60%;
+    position: relative;
+    padding: 35px;
+    border-radius: 10px;
+    background-color: var(--cor-primaria);
+    box-shadow: var(--cor-da-sombra);
+}
+
+.login-card h1 {
+    font-size: 28pt;
+    padding: 20px;
+    text-align: center;
+    font-family: var(--font-primaria);
+    font-weight: 700;
+    color: var(--cor-de-apoio);
+}
+
+.login-card .input-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.input-box label {
+    color: var(--cor-de-apoio);
+    font-family: var(--font-primaria);
+    font-weight: 200;
+    padding: 5px;
+}
+
+.input-box input {
+    width: 70%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 12pt;
+    color: var(--cor-de-apoio);
+    background-color: var(--cor-de-fundo);
+    box-shadow: var(--cor-da-sombra);
+}
+
+.input-box input::placeholder {
+    color: var(--cor-de-apoio);
+}
+
+.input-box i {
+    color: var(--cor-de-apoio);
+    padding: 5px;
+    font-size: 25px;
+}
+
+.login-card .remember_forgot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: var(--font-primaria);
+    font-weight: 200;
+    color: var(--cor-de-apoio);
+    padding: 2px;
+}
+
+.remember_forgot label input{
+    accent-color: var(--cor-de-apoio);
+    margin-right: 2px;
+}
+
+.remember_forgot a {
+    color: var(--cor-de-apoio);
+    text-decoration: none;
+}
+
+.remember_forgot a:hover{
+    text-decoration: underline;
+}
+
+.login-card .btn-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+}
+
+.btn-login button{
+    width: 50%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--cor-primaria);
+    background-color: var(--cor-de-apoio);
+    box-shadow: var(--cor-da-sombra);
+    font-size: var(--font-primaria);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-login button:hover{
+    color: var(--cor-de-apoio);
+    background-color: var(--cor-de-fundo);
+}
+
+.login-card .register_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.register_link p {
+    color: var(--cor-de-apoio);
+    font-family: var(--font-primaria);
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.register_link a {
+    text-decoration: none;
+    color: var(--cor-de-apoio);
+    font-family: var(--font-primaria);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.register_link a:hover{
+    text-decoration: underline;
+}
+
+.login-right_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 20px 0;
+}
+
+.footer-reserved{
+    color: var(--cor-de-apoio);
+    font-family: var(--font-primaria);
+    font-weight: 200;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 1900px) {
+
+    .login-right{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .login-card{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 868px) {
+    
+    .login-left {
+        display: none;
+    }
+
+    .login-right{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .login-card{
+        width: 90%;
+        height: auto;
+        font-size: 12px;
+    }
+
+    .login-right img{
+        width: 6.5rem;
+    }
+
+    .input-box input, .login-card .remember_forgot, .register_link p, .register_link a {
+        font-size: 12px;
+    }
+
+    .btn-login button{
+        width: 50%;
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .login-left {
+        display: none;
+    }
+
+    .login-right{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .login-card{
+        width: 90%;
+        height: auto;
+        font-size: 12px;
+    }
+
+    .login-right img{
+        width: 6.5rem;
+    }
+
+    .input-box input, .login-card .remember_forgot, .register_link p, .register_link a {
+        font-size: 12px;
+    }
+
+    .btn-login button{
+        width: 50%;
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .login-left {
+        display: none;
+    }
+
+    .login-right{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .login-right img{
+        width: 6.5rem;
+    }
+
+    .login-card{
+        width: 91%;
+        height: auto;
+        font-size: 12px;
+    }
+
+    .input-box input, .login-card .remember_forgot, .register_link p, .register_link a {
+        font-size: 12px;
+    }
+
+    .btn-login button{
+        width: 50%;
+        padding: 12px;
+        font-size: 14px;
+    }
+}
