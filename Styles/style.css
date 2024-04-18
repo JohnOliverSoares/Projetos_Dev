@@ -245,6 +245,38 @@ body {
 
 }
 
+@media only screen and (max-width: 1200px) {
+    
+    .login-left {
+        display: none;
+    }
+
+    .login-right{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .login-card{
+        width: 70%;
+        height: auto;
+        font-size: 22px;
+    }
+
+    .login-right img{
+        width: 22rem;
+    }
+
+    .input-box input, .login-card .remember_forgot, .register_link p, .register_link a, .footer-reserved {
+        font-size: 22px;
+    }
+
+    .btn-login button{
+        width: 50%;
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+
 @media only screen and (max-width: 868px) {
     
     .login-left {
@@ -266,7 +298,7 @@ body {
         width: 6.5rem;
     }
 
-    .input-box input, .login-card .remember_forgot, .register_link p, .register_link a {
+    .input-box input, .login-card .remember_forgot, .register_link p, .register_link a, .footer-reserved{
         font-size: 12px;
     }
 
@@ -298,7 +330,7 @@ body {
         width: 6.5rem;
     }
 
-    .input-box input, .login-card .remember_forgot, .register_link p, .register_link a {
+    .input-box input, .login-card .remember_forgot, .register_link p, .register_link a, .footer-reserved {
         font-size: 12px;
     }
 
@@ -333,7 +365,7 @@ body {
         font-size: 22px;
     }
 
-    .input-box input, .login-card .remember_forgot, .register_link p, .register_link a {
+    .input-box input, .login-card .remember_forgot, .register_link p, .register_link a, .footer-reserved{
         font-size: 12px;
     }
 
@@ -381,7 +413,7 @@ body {
 
 }
 
-@media only screen and (max-width: 250px) {
+@media only screen and (max-width: 200px) {
     .login-left {
         display: none;
     }
