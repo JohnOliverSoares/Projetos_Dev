@@ -381,7 +381,7 @@ body {
 
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 250px) {
     .login-left {
         display: none;
     }
