@@ -381,3 +381,39 @@ body {
 
 }
 
+@media only screen and (max-width: 300px) {
+    .login-left {
+        display: none;
+    }
+
+    .login-right{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .login-right img{
+        width: 6.5rem;
+    }
+
+    .login-card{
+        width: 91%;
+        height: auto;
+        font-size: 9px;
+    }
+
+    .login-card h1{
+        font-size: 20px;
+    }
+
+
+    .input-box input, .login-card .remember_forgot, .register_link p, .register_link a, .footer-reserved {
+        font-size: 9px;
+    }
+
+    .btn-login button{
+        width: 50%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+}
